@@ -1,0 +1,231 @@
+<robot name="robot_0">
+  <link name="link_0">
+    <inertial>
+      <origin xyz="2.935420835672152e-17 -4.802679704832299e-19 0.06928866854951908" rpy="0 0 0" />
+      <mass value="1.2441267184811944" />
+      <inertia ixx="0.002391387816043804" ixy="1.7382767274578743e-19" ixz="-2.190934733212692e-18" iyy="0.0023913878160438055" iyz="3.2790783402052577e-20" izz="0.0006651105339449277" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_0.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_0.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_0" type="revolute">
+    <parent link="link_0" />
+    <child link="link_1" />
+    <origin xyz="0.0 0.0 0.15060040806374903" rpy="0 0 0" />
+    <axis xyz="0.0 1.2246467991473532e-16 -1.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.45640368593564784" friction="0.2" />
+  </joint>
+  <transmission name="transmission_0">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_0" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_0">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_1">
+    <inertial>
+      <origin xyz="-1.0304586194975333e-15 -7.003855091675599e-17 0.03649632580339787" rpy="0 0 0" />
+      <mass value="0.6778197347156216" />
+      <inertia ixx="0.0011056550824708274" ixy="-1.462255744391739e-19" ixz="5.516405924394454e-17" iyy="0.0006452772616757258" iyz="1.9296777703589006e-18" izz="0.0001658284834031317" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_1.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_1" type="revolute">
+    <parent link="link_1" />
+    <child link="link_2" />
+    <origin xyz="0.0 1.162242205380444e-18 0.08552209563037773" rpy="0 0 0" />
+    <axis xyz="1.0 0.0 0.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.17829544034680536" friction="0.2" />
+  </joint>
+  <transmission name="transmission_1">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_1" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_1">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_2">
+    <inertial>
+      <origin xyz="-9.454935195314952e-16 6.108037849503882e-18 0.07064574143463034" rpy="0 0 0" />
+      <mass value="0.8998486184421507" />
+      <inertia ixx="0.002226568074051198" ixy="9.578480097209269e-22" ixz="-3.5971557847953725e-17" iyy="0.0015666474094894185" iyz="7.300674234387359e-18" izz="0.0002999696211894147" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_2.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_2" type="revolute">
+    <parent link="link_2" />
+    <child link="link_3" />
+    <origin xyz="0.0 -6.373270656782302e-33 0.1431541622462753" rpy="0 0 0" />
+    <axis xyz="1.0 0.0 0.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.11777344845857408" friction="0.2" />
+  </joint>
+  <transmission name="transmission_2">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_2" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_2">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_3">
+    <inertial>
+      <origin xyz="7.79245596137439e-18 6.659957221217795e-17 0.05615296385188076" rpy="0 0 0" />
+      <mass value="0.6437237111776174" />
+      <inertia ixx="0.0011750501160949017" ixy="7.454186396458869e-20" ixz="-4.2379053699877658e-19" iyy="0.0012131434832695245" iyz="2.8386236815103547e-18" izz="0.0003334151325309881" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_3.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_3" type="revolute">
+    <parent link="link_3" />
+    <child link="link_4" />
+    <origin xyz="0.0 -5.098616525425841e-33 0.12997561673851582" rpy="0 0 0" />
+    <axis xyz="0.0 1.2246467991473532e-16 -1.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.011720048543491806" friction="0.2" />
+  </joint>
+  <transmission name="transmission_3">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_3" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_3">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_4">
+    <inertial>
+      <origin xyz="-6.31267132798878e-16 -1.709182201042664e-17 0.04570710020266928" rpy="0 0 0" />
+      <mass value="0.3656712598357016" />
+      <inertia ixx="0.0006239931202976753" ixy="-5.505354591705658e-20" ixz="2.172448897740888e-17" iyy="0.000641078942677871" iyz="3.425913116586744e-19" izz="9.400427910843907e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_4.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_4.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_4" type="revolute">
+    <parent link="link_4" />
+    <child link="link_5" />
+    <origin xyz="0.0 8.056619694786502e-19 0.10988266374810882" rpy="0 0 0" />
+    <axis xyz="1.0 0.0 0.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.21527916207034054" friction="0.2" />
+  </joint>
+  <transmission name="transmission_4">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_4" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_4">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_5">
+    <inertial>
+      <origin xyz="-9.150777910453627e-16 4.0019058529047627e-17 0.037896529412225786" rpy="0 0 0" />
+      <mass value="0.15804786199723994" />
+      <inertia ixx="0.00010191488688986035" ixy="4.2403568585774125e-21" ixz="-4.611041778110844e-18" iyy="5.991156292916793e-05" iyz="1.8512337758014088e-19" izz="1.2692515088553973e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_5.dae" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="joint_5" type="revolute">
+    <parent link="link_5" />
+    <child link="link_6" />
+    <origin xyz="0.0 -4.673731814973688e-33 0.09089072652707299" rpy="0 0 0" />
+    <axis xyz="0.0 1.2246467991473532e-16 -1.0" />
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1" />
+    <dynamics damping="0.03719765640951033" friction="0.2" />
+  </joint>
+  <transmission name="transmission_5">
+    <type value="transmission_interface/SimpleTransmission" />
+    <joint name="joint_5" />
+    <hardwareInterface value="hardware_interface/JointPositionInterface" />
+    <actuator name="actuator_5">
+      <mechanicalReduction value="1.0" />
+    </actuator>
+  </transmission>
+  <link name="link_6">
+    <inertial>
+      <origin xyz="1.8608915585214185e-17 -2.0018838509845662e-19 0.032624310187138066" rpy="0 0 0" />
+      <mass value="0.07231778993442711" />
+      <inertia ixx="4.887920932903893e-05" ixy="-1.7202376300864504e-21" ixz="6.310684997577141e-20" iyy="2.1842214036894533e-05" iyz="3.1956812261727885e-22" izz="5.373041659304826e-06" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_6.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="dae/link_6.dae" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
